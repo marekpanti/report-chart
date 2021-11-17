@@ -1,0 +1,106 @@
+section {
+  width: 100%;
+  min-width: 960px;
+}
+
+.time {
+  left: 56px;
+  display: flex;
+  position: relative;
+
+  span {
+    display: inline-block;
+    position: absolute;
+  }
+}
+
+.row {
+  height: 54px;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .title {
+    display: flex;
+    background: #d8d8d8;
+    width: 56px;
+    height: 100%;
+    border-right: 1px solid #d3d3d3;
+    text-align: center;
+    margin-right: 0.25rem;
+  }
+
+  .info {
+    position: relative;
+    width: 100%;
+
+    .green {
+      border: 1px solid #2ecc71;
+      border-radius: 10px;
+      background: #aeebc8;
+      height: 36px;
+      margin-top: 0.5rem;
+      position: absolute;
+    }
+
+    .orange {
+      border: 1px solid #E67E22;
+      border-radius: 10px;
+      background: #F5CDA9;
+      height: 36px;
+      margin-top: 0.5rem;
+      position: absolute;
+    }
+
+    .red {
+      border: 1px solid #E74C3C;
+      border-radius: 10px;
+      background: #F6BAB3;
+      height: 36px;
+      margin-top: 0.5rem;
+      position: absolute;
+    }
+
+    .point {
+      background: #2A2A2A;
+      width: 9px;
+      height: 9px;
+      position: absolute;
+      cursor: pointer;
+
+      .tooltip {
+        background: #2a2a2a;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 8px;
+        display: none;
+        width: 50px;
+        font-size: 12px;
+        margin-left: 1rem;
+        top: -10px;
+        position: absolute;
+      }
+
+      &:hover {
+        .tooltip {
+          display: block;
+        }
+      }
+    }
+
+    .left-point {
+      left: -4px;
+      top: 14px;
+      border-radius: 50%;
+    }
+
+    .right-point {
+      right: -4px;
+      top: 14px;
+      border-radius: 50%;
+    }
+  }
+}
